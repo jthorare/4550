@@ -1,38 +1,38 @@
-.rounded-corners-all-around {
+.wd-rounded-corners-all-around {
     border-radius: 50px;
 }
 * {
     font-size: 100%;
-    font-family: Segoe UI
+    font-family: "Segoe UI";
 }
 #search {
     padding-left: 16px;
 }
-.nudge-right-top {
+.wd-nudge-right-top {
     position: relative;
     left: 16px;
     top: 3px;
 }
 
-.nudge-right-top > a {
+.wd-nudge-right-top > a {
     vertical-align: middle;
     position: relative;
     left: 12px;
     top: 2px;
 }
 
-.bg-color-black {
+.wd-bg-color-black {
     background-color: black;
 }
 
-.bg-color-dark-grey {
+.wd-bg-color-dark-grey {
     background-color: darkgray;
 }
-.text-white {
+.wd-text-white {
     color: white;
 }
 
-.linkset {
+.wd-linkset {
     font-size: 15px;
     padding: 16px 0px;
     margin: 0px 16px;
@@ -44,25 +44,25 @@
     border-bottom: none;
 }
 
-.linkset:hover {
+.wd-linkset:hover {
     color: rgb(29,161,242);
     border-bottom: 2px solid rgb(29,161,242);
 }
 
-.linkset:focus {
+.wd-linkset:focus {
     color: rgb(29,161,242);
     border-bottom: 2px solid rgb(29,161,242);
 }
 
-.icon-blue  {
+.wd-icon-blue  {
     color: rgb(29,161,242);
 }
 
-.suggested-section {
-    border-top: 1px solid rgb(110,118,125);
+.wd-suggested-section {
+    border-top: 1px solid rgb(47,51,54);
 }
-.suggested-post {
-    border-bottom: 1px solid rgb(110,118,125);
+.wd-suggested-post {
+    border-bottom: 1px solid rgb(47,51,54);
     padding-left: 11px;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -70,46 +70,46 @@
     vertical-align: middle;
 }
 
-.topic {
+.wd-topic {
     font-size: 13px;
     color: rgb(110, 118, 125);
 }
 
-.suggested-post > .suggested-filler {
+.wd-suggested-post > .wd-suggested-filler {
     font-size: 13px;
     color: rgb(110,118,125);
 }
 
-.suggested-post > .title{
+.wd-suggested-post > .wd-title{
     font-size: 13px;
     color: white;
 }
 
-.suggested-post > .author {
+.wd-suggested-post > .wd-author {
     font-size: 13px;
     color: white;
 }
 
-.author, .topic {
+.wd-author, .wd-topic {
     float: left;
     margin-right: 10px;
 }
 
-.suggested-post .content {
+.wd-suggested-post .wd-content {
     font-size: 15px;
     color: white;
 }
 
-.timestamp {
+.wd-timestamp {
     font-size: 13px;
     color: rgb(110,118,125);
 }
 
-.float-right-img {
+.wd-float-right-img {
     display: inline-block;
     vertical-align: middle;
     float: right;
-    margin-right: 16px;
+    margin: 3px 16px 3px 0px;
     clear:both;
     width: 100px;
     height: 100px;
