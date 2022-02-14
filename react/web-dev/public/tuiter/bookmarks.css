@@ -6,6 +6,8 @@
     margin: 5px;
     border-left: 1px solid rgb(47, 51, 54);
     border-right: 1px solid rgb(47, 51, 54);
+    height: max-content;
+    padding-bottom: 10px;
 }
 
 * {
@@ -13,12 +15,12 @@
     font-family: "Segoe UI";
 }
 
-.wd-bm-header {
-    border-bottom: 1px solid rgb(47,51,54);
+.wd-bm-header, .wd-bm-bookmark {
+    border-bottom: 1px solid rgb(47, 51, 54);
 }
 
 .wd-bm-title {
-    margin-left:16px;
+    margin-left: 16px;
     margin-right: 12px;
     margin-bottom: 0px;
 }
@@ -27,13 +29,46 @@
     margin: 0px 12px 12px 16px;
 }
 
+.wd-bm-content > p {
+    display: inline-block;
+    border-radius: 12px;
+    margin-left: 80px;
+    margin-top: 0px;
+}
+
 .wd-bm-title {
     font-size: 20px;
     color: white;
 }
 
+.wd-bm-user-info {
+    display: inline-block;
+    margin-left: 12px;
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-bm-username {
+    color: white;
+    float: left;
+}
+
+.wd-bm-content {
+    color: white;
+    font-size: 15px;
+    max-width: 506px;
+    margin-right: 16px;
+    margin-bottom: 12px;
+}
+
+.wd-bm-handle, .wd-bm-timestamp {
+    float: left;
+    margin-left: 3px;
+}
+
+
 .wd-bm-header > .wd-bm-header-handle {
-    color: rgb(110,118,125);
+    color: rgb(110, 118, 125);
     font-size: 13px;
 }
 
@@ -41,38 +76,70 @@
     clear: both;
 }
 
-.grid-col-left-fifth {
-    width: 20%;
-    float: left;
-}
-.grid-col-right-four-fifths {
-    width:80%;
-    float:left;
-}
-.wd-bm-bookmark img {
+
+.wd-bm-bookmark > .wd-bm-avatar {
     margin: 12px 0px 0px 16px;
     border-radius: 50%;
     height: 48px;
     width: 48px;
 }
 
+.wd-bm-snapshot {
+    margin-left: 80px;
+    border: 1px solid rgb(47, 51, 54);
+    border-radius: 10px;
+    max-width: 504px;
+}
+
+.wd-bm-snapshot > .wd-bm-image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 264px;
+    width: 504px;
+}
+
+.wd-bm-snapshot-title, .wd-bm-snapshot-text {
+    font-size: 15px;
+    padding: 0px 12px 12px 12px;
+}
+
+.wd-bm-snapshot > .wd-bm-snapshot-title {
+    color: white;
+    font-weight: bold;
+}
+
+.wd-bm-snapshot > .wd-bm-snapshot-text {
+    color: rgb(110, 118, 125);
+}
+
 .wd-icons {
+    margin-top: 12px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
+.wd-icons > a {
+    text-decoration: none;
+}
+
+.wd-icons > a > label{
+    padding-left: 12px;
+}
+
+
 .wd-share-thread, .wd-retweet, .wd-like {
-    color: rgb(110,118,125);
+    color: rgb(110, 118, 125);
 }
 
 .wd-share-thread:hover {
     opacity: 1;
-    background: rgba(29,161,242, 0.5);
-    color: rgb(28,161,242);
+    background: rgba(29, 161, 242, 0.5);
+    color: rgb(28, 161, 242);
 }
+
 .wd-share-thread:focus > .wd-share-thread-icon {
-    color: rgb(28,161,242);
+    color: rgb(28, 161, 242);
 }
 
 .wd-retweet:hover {
@@ -82,15 +149,15 @@
 }
 
 .wd-retweet:focus > .wd-retweet-icon {
-    color: rgb(25,207,134);
+    color: rgb(25, 207, 134);
 }
 
 .wd-like:hover {
-    opacity:1;
-    background: rgba(224,96,118, 0.5);
-    color: rgb(224,96,118);
+    opacity: 1;
+    background: rgba(224, 96, 118, 0.5);
+    color: rgb(224, 96, 118);
 }
 
 .wd-like:focus > .wd-like-icon {
-    color: rgb(224,96,118);
+    color: rgb(224, 96, 118);
 }
