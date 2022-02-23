@@ -3,67 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="explore.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a628d495f4.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    <link href="explore.css" rel="stylesheet"/>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/a628d495f4.js"></script>
 </head>
-<body>
-<a href="navigation.html">Back</a>
-<div class="wd-bg-color-black" id="EXPLORE-BG">
-    <div class="wd-nudge-right-top" id="TOP">
-        <input class="wd-rounded-corners-all-around bg-color-dark-grey text-white" id="search"
-               placeholder="Search Tuiter"
-               type="text">
-        <a href="explore-settings.html">
-            <i class="wd-fa-solid fa-gear icon-blue"></i>
-        </a>
-    </div>
-    <div class="wd-offset-left" id="LINKSET">
-        <button class="wd-linkset">For you</button>
-        <button class="wd-linkset">Trending</button>
-        <button class="wd-linkset">COVID-19</button>
-        <button class="wd-linkset">News</button>
-        <button class="wd-linkset">Sports</button>
-        <button class="wd-linkset">Entertainment</button>
-    </div>
-    <div class="wd-suggested-section" id="SUGGESTED">
-        <div class="wd-suggested-post">
-            <div class="wd-suggested-filler">
-                Trending in Science
+<body class="wd-bg-color">
+<div class="container wd-bg-color">
+    <div class="row w-100">
+        <div class="col col-1 col-md-2 wd-lights-out-text d-inline-block">
+            <!-- leftmost column w/ vertical tabs -->
+            <div class="position-relative ps-3">
+                <i class="fa-brands fa-twitter h-100"></i>
             </div>
-            <div class="wd-title">Starship</div>
-            <div class="wd-suggested-filler">55.5K Tuits</div>
-        </div>
-        <div class="wd-suggested-post">
-            <div class="wd-suggested-filler">
-                Sports - Trending
+            <div class="list-group-flush list-group override-bs">
+                <button class="wd-left-tabs list-group-item list-group-item-action nav-bar">
+                    <i class="fa fa-home"></i>
+                    <label class="d-none d-lg-inline">Home</label>
+                </button>
+                <button class="wd-left-tabs list-group-item list-group-item-action nav-bar">
+                    <i class="fa-solid fa-hashtag"></i>
+                    <label class="d-none d-lg-inline">Explore</label>
+                </button>
+                <button class="wd-left-tabs list-group-item list-group-item-action nav-bar">
+                    <i class="fa-solid fa-bell"></i>
+                    <label class="d-none d-lg-inline">Notifications</label>
+                </button>
+                <button class="wd-left-tabs list-group-item list-group-item-action nav-bar">
+                    <i class="fa-solid fa-envelope"></i>
+                    <label class="d-none d-lg-inline">Messages</label>
+                </button>
+                <button class="wd-left-tabs list-group-item list-group-item-action nav-bar">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <label class="d-none d-lg-inline">Bookmarks</label>
+                </button>
+                <button class="wd-left-tabs list-group-item list-group-item-action nav-bar">
+                    <i class="fa-solid fa-list"></i>
+                    <label class="d-none d-lg-inline">Lists</label>
+                </button>
+                <button class="wd-left-tabs list-group-item list-group-item-action nav-bar">
+                    <i class="fa-solid fa-user"></i>
+                    <label class="d-none d-lg-inline">Profile</label>
+                </button>
+                <button class="wd-left-tabs list-group-item list-group-item-action nav-bar">
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <label class="d-none d-lg-inline">More</label>
+                </button>
             </div>
-            <div class="wd-title">Joe Rogan</div>
-            <div class="wd-suggested-filler">5218 Tuits</div>
-        </div>
-        <div class="wd-suggested-post">
-            <img class="wd-float-right-img" src="assets/nyt.png">
-            <div class="wd-author">The New York Times</div>
-            <div class="wd-timestamp">- Yesterday</div>
-            <label class="wd-content">CNN's Cuomo conundrum: A star anchor with a brother in trouble</label>
-        </div>
-        <div class="wd-suggested-post">
-            <img class="wd-float-right-img" src="assets/covid.png">
-            <div class="wd-topic">COVID-19</div>
-            <div class="wd-timestamp">- LIVE</div>
-            <div class="wd-content">COVID-19: News and updates for Massachusetts</div>
+            <button class="btn w-100 m-auto text-center d-inline-block" id="tuit">Tuit</button>
 
         </div>
-        <div class="wd-suggested-post">
-            <img class="wd-float-right-img" src="assets/bloomberg.png">
-            <div class="wd-author">Bloomberg Opinion</div>
-            <div class="wd-timestamp">- Yesterday</div>
-            <label class="wd-content">Thinking about getting a booster? Read this first.</label>
+
+        <div class="col col-9 col-lg-6 d-inline-block">
+            <!-- center column of explore w/ search, horizontal tabs, suggested Tuits -->
+            <!-- top row of search bar + gear icon -->
+            <div class="w-100 position-relative h-auto">
+                <i class="fa fa-search position-absolute" id="MAG-GLASS">
+                </i>
+                <input class="wd-rounded-corners-all-around wd-bg-color-dark-grey text-white"
+                       id="search"
+                       placeholder="Search Tuiter"
+                       type="text">
+                <a href="explore-settings.html">
+                    <i class="fa-solid fa-gear wd-blue"></i>
+                </a>
+            </div>
+
+            <!-- tabs with highlight on active and focus -->
+            <div class="w-100 position-relative list-group list-group-horizontal">
+                <button class="text-nowrap wd-linkset wd-bg-color" href="for-you.html">For you</button>
+                <button class="text-nowrap wd-linkset wd-bg-color" href="trending.html">Trending</button>
+                <button class="text-nowrap  wd-linkset wd-bg-color" href="news.html">News</button>
+                <button class="text-nowrap wd-linkset wd-bg-color" href="sports.html">Sports</button>
+                <button class="text-nowrap wd-linkset wd-bg-color" href="entertainment.html">Entertainment</button>
+            </div>
+
+            <div class="w-100 wd-suggested-section" id="SUGGESTED">
+                <div class="wd-suggested-post">
+                    <img class="w-100" src="assets/starship.png">
+                </div>
+                <div class="wd-suggested-post">
+                    <img class="wd-float-right-img" src="assets/react.png">
+                    <div class="wd-suggested-filler">
+                        Web Development
+                    </div>
+                    <div>
+                        <label class="wd-title">ReactJS</label>
+                        <label class="wd-timestamp">- 2h</label>
+                    </div>
+                    <div class="wd-content">
+                        React.js is a component based front end library that makes it very easy to build Single Page
+                        Applications or SPAs
+                    </div>
+                    <div class="wd-suggested-filler">55.5K Tuits</div>
+                </div>
+                <div class="wd-suggested-post">
+                    <img class="wd-float-right-img" src="assets/js.png">
+                    <div>
+                        <label class="wd-title">JavaScript</label>
+                        <label class="wd-timestamp">- 2h</label>
+                    </div>
+                    <div class="wd-content">
+                        JavaScript is a programming language that can run on browsers as well as desktops
+                    </div>
+                    <div class="wd-suggested-filler">123K Tuits</div>
+                </div>
+                <div class="wd-suggested-post">
+                    <img class="wd-float-right-img" src="assets/jquery.png">
+                    <div class="wd-suggested-filler">
+                        Web Development
+                    </div>
+                    <div>
+                        <label class="wd-title">jQuery</label>
+                    </div>
+                    <div class="wd-suggested-filler">123K Tuits</div>
+                </div>
+                <div class="wd-suggested-post">
+                    <img class="wd-float-right-img" src="assets/node.png">
+                    <div>
+                        <label class="wd-title">NodeJS</label>
+                        <label class="wd-timestamp">- 2h</label>
+                    </div>
+                    <div class="wd-suggested-filler">123K Tuits</div>
+                </div>
+
+            </div>
         </div>
-        <div class="wd-suggested-post">
-            <img class="wd-float-right-img" src="assets/css.png">
-            <div class="wd-topic">CS 4550</div>
-            <div class="wd-timestamp">- 2/10</div>
-            <div class="wd-content">CS 4550 takes on CSS</div>
+
+        <div class="d-none d-md-none d-lg-block col col-lg-4  wd-lights-out-text">
+            <!-- right most w/ suggested "Who to follow"  -->
+            <label class="fw-bolder">Who to follow</label>
+            <div class="list-group">
+                <div class="list-group-item follow ">
+                    <div class="row">
+                        <img class="float-start col-4 rounded-circle" src="assets/java.png">
+                        <div class="col-5">
+                            <label class="col-12 fw-bold">Java</label>
+                            <label class="col-12">@Java</label>
+                        </div>
+                        <button class="col-3 h-75 wd-bg-color btn me-3 ">Follow</button>
+                    </div>
+                </div>
+                <div class="list-group-item follow ">
+                    <div class="row">
+                        <img class="float-start col-4 rounded-circle" src="assets/rs.png">
+                        <div class="col-5">
+                            <label class="col-12 fw-bold">Relativity Space</label>
+                            <label class="col-12">@relativityspace</label>
+                        </div>
+                        <button class="col-3 h-75 wd-bg-color btn me-3 ">Follow</button>
+                    </div>
+                </div>
+                <div class="list-group-item follow ">
+                    <div class="row">
+                        <img class="float-start col-4 rounded-circle" src="assets/vg.png">
+                        <div class="col-5">
+                            <label class="col-12 fw-bold">Virgin Galactic</label>
+                            <label class="col-12">@virgingalactic</label>
+                        </div>
+                        <button class="col-3 h-75 wd-bg-color btn me-3 ">Follow</button>
+                    </div>
+                </div>
+                <div class="list-group-item follow ">
+                    <div class="row">
+                        <img class="float-start col-4 rounded-circle" src="assets/nasa.png">
+                        <div class="col-5">
+                            <label class="col-12 fw-bold">NASA</label>
+                            <label class="col-12">@NASA</label>
+                        </div>
+                        <button class="col-3 h-75 wd-bg-color btn me-3 ">Follow</button>
+                    </div>
+                </div>
+                <div class="list-group-item follow ">
+                    <div class="row">
+                        <img class="float-start col-4 rounded-circle" src="assets/tesla.png">
+                        <div class="col-5">
+                            <label class="col-12 fw-bold">Tesla</label>
+                            <label class="col-12">@Tesla</label>
+                        </div>
+                        <button class="col-3 h-75 wd-bg-color btn me-3 ">Follow</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

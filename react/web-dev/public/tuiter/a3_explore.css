@@ -1,47 +1,38 @@
-.wd-bg-color {
-    background: rgb(20, 23, 26);
-}
-
-.wd-blue {
-    color: rgb(29, 161, 242);
-}
-
-.wd-lights-out-text {
-    color: rgb(245, 248, 250);
-}
-
-.list-group-item {
-    background: rgb(20, 23, 26);
-    border:none;
-    color: rgb(245, 248, 250);
-}
-
-.list-group-item:active, .nav-bar:hover, .nav-bar:focus, .nav-bar:active, nav-bar:active, #tuit{
-    background: rgb(101, 119, 134);
-    color: rgb(245, 248, 250);
-    border-radius: 20px;
-}
-
-#search {
-    padding-left: 32px;
-    color: white;
-    background-color: rgb(47, 51, 54);
-    width: 90%;
-}
-
-#MAG-GLASS {
-    left: 10px;
-    top: 7px;
-}
-
 .wd-rounded-corners-all-around {
     border-radius: 50px;
+}
+* {
+    font-size: 100%;
+    font-family: "Segoe UI";
+}
+#search {
+    padding-left: 16px;
+    color: white;
+    background-color: rgb(47, 51, 54);
+
+}
+.wd-nudge-right-top {
+    position: relative;
+    left: 16px;
+    top: 3px;
+}
+
+.wd-nudge-right-top > a {
+    vertical-align: middle;
+    position: relative;
+    left: 12px;
+    top: 2px;
+}
+
+.wd-bg-color-black {
+    background-color: black;
 }
 
 .wd-linkset {
     font-size: 15px;
     padding: 16px 0px;
     margin: 0px 16px;
+    background-color: black;
     color: rgb(110, 118, 125);
     border-top: none;
     border-left: none;
@@ -50,31 +41,20 @@
 }
 
 .wd-linkset:hover {
-    color: rgb(29, 161, 242);
-    border-bottom: 2px solid rgb(29, 161, 242);
+    color: rgb(29,161,242);
+    border-bottom: 2px solid rgb(29,161,242);
 }
 
 .wd-linkset:focus {
-    color: rgb(245, 248, 250);
-    border-bottom: 2px solid rgb(29, 161, 242);
+    color: rgb(29,161,242);
+    border-bottom: 2px solid rgb(29,161,242);
 }
 
-.follow button {
-    background: rgb(101, 119, 134);
-    color: rgb(245, 248, 250);
+.wd-icon-blue  {
+    color: rgb(29,161,242);
 }
 
-.follow img {
-    display: inline-block;
-    vertical-align: middle;
-    float: left;
-    margin: 3px 16px 3px 0px;
-    clear: both;
-    width: 60px;
-    height: 60px;
-}
-
-wd-suggested-section {
+.wd-suggested-section {
     border-top: 1px solid rgb(47,51,54);
 }
 .wd-suggested-post {
@@ -96,7 +76,7 @@ wd-suggested-section {
     color: rgb(110,118,125);
 }
 
-.wd-suggested-post .wd-title{
+.wd-suggested-post > .wd-title{
     font-size: 13px;
     color: white;
 }
