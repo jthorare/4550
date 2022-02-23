@@ -16,7 +16,7 @@
     color: rgb(245, 248, 250);
 }
 
-.nav-bar:hover, .nav-bar-item:focus, .nav-bar-item:active, nav-bar:active, #tuit{
+.list-group-item:active, .nav-bar:hover, .nav-bar:focus, .nav-bar:active, nav-bar:active, #tuit{
     background: rgb(101, 119, 134);
     color: rgb(245, 248, 250);
     border-radius: 20px;
