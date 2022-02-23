@@ -3,67 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="explore.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a628d495f4.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    <link href="explore.css" rel="stylesheet"/>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/a628d495f4.js"></script>
 </head>
-<body>
-<a href="navigation.html">Back</a>
-<div class="wd-bg-color-black" id="EXPLORE-BG">
-    <div class="wd-nudge-right-top" id="TOP">
-        <input class="wd-rounded-corners-all-around bg-color-dark-grey text-white" id="search"
-               placeholder="Search Tuiter"
-               type="text">
-        <a href="explore-settings.html">
-            <i class="wd-fa-solid fa-gear icon-blue"></i>
-        </a>
-    </div>
-    <div class="wd-offset-left" id="LINKSET">
-        <button class="wd-linkset">For you</button>
-        <button class="wd-linkset">Trending</button>
-        <button class="wd-linkset">COVID-19</button>
-        <button class="wd-linkset">News</button>
-        <button class="wd-linkset">Sports</button>
-        <button class="wd-linkset">Entertainment</button>
-    </div>
-    <div class="wd-suggested-section" id="SUGGESTED">
-        <div class="wd-suggested-post">
-            <div class="wd-suggested-filler">
-                Trending in Science
+<body class="wd-bg-color">
+<div class="container wd-bg-color">
+    <div class="row">
+        <div class="col-3 wd-lights-out-text me-1 ">
+            <!-- leftmost column w/ vertical tabs -->
+            <div class="position-relative ps-3">
+                <i class="fa-brands fa-twitter h-100"></i>
             </div>
-            <div class="wd-title">Starship</div>
-            <div class="wd-suggested-filler">55.5K Tuits</div>
-        </div>
-        <div class="wd-suggested-post">
-            <div class="wd-suggested-filler">
-                Sports - Trending
+            <div class="list-group-flush list-group override-bs">
+                <a class="wd-left-tabs list-group-item list-group-item-action">
+                    <i class="fa fa-home"></i>
+                    <label class="d-none d-md-inline">Home</label>
+                </a>
+                <a class="wd-left-tabs list-group-item list-group-item-action">
+                    <i class="fa-solid fa-hashtag"></i>
+                    <label class="d-none d-md-inline">Explore</label>
+                </a>
+                <a class="wd-left-tabs list-group-item list-group-item-action">
+                    <i class="fa-solid fa-bell"></i>
+                    <label class="d-none d-md-inline">Notifications</label>
+                </a>
+                <a class="wd-left-tabs list-group-item list-group-item-action">
+                    <i class="fa-solid fa-envelope"></i>
+                    <label class="d-none d-md-inline">Messages</label>
+                </a>
+                <a class="wd-left-tabs list-group-item list-group-item-action">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <label class="d-none d-md-inline">Bookmarks</label>
+                </a>
+                <a class="wd-left-tabs list-group-item list-group-item-action">
+                    <i class="fa-solid fa-list"></i>
+                    <label class="d-none d-md-inline">Lists</label>
+                </a>
+                <a class="wd-left-tabs list-group-item list-group-item-action">
+                    <i class="fa-solid fa-user"></i>
+                    <label class="d-none d-md-inline">Profile</label>
+                </a>
+                <a class="wd-left-tabs list-group-item list-group-item-action">
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <label class="d-none d-md-inline">More</label>
+                </a>
             </div>
-            <div class="wd-title">Joe Rogan</div>
-            <div class="wd-suggested-filler">5218 Tuits</div>
-        </div>
-        <div class="wd-suggested-post">
-            <img class="wd-float-right-img" src="assets/nyt.png">
-            <div class="wd-author">The New York Times</div>
-            <div class="wd-timestamp">- Yesterday</div>
-            <label class="wd-content">CNN's Cuomo conundrum: A star anchor with a brother in trouble</label>
-        </div>
-        <div class="wd-suggested-post">
-            <img class="wd-float-right-img" src="assets/covid.png">
-            <div class="wd-topic">COVID-19</div>
-            <div class="wd-timestamp">- LIVE</div>
-            <div class="wd-content">COVID-19: News and updates for Massachusetts</div>
+            <button class="btn w-100 m-auto" id="tuit">Tuit</button>
 
         </div>
-        <div class="wd-suggested-post">
-            <img class="wd-float-right-img" src="assets/bloomberg.png">
-            <div class="wd-author">Bloomberg Opinion</div>
-            <div class="wd-timestamp">- Yesterday</div>
-            <label class="wd-content">Thinking about getting a booster? Read this first.</label>
+
+        <div class="col-7 ms-1 me-1"> <!-- center column of explore w/ search, horizontal tabs, suggested Tuits -->
+            <!-- top row of search bar + gear icon -->
+            <div class="w-100 position-relative h-auto">
+                <i class="fa fa-search position-absolute" id="MAG-GLASS">
+                </i>
+                <input class="wd-rounded-corners-all-around wd-bg-color-dark-grey text-white"
+                       id="search"
+                       placeholder="Search Tuiter"
+                       type="text">
+                <a href="explore-settings.html">
+                    <i class="fa-solid fa-gear icon-blue"></i>
+                </a>
+            </div>
+
+            <!-- tabs with highlight on active and focus -->
+            <div class="w-100 list-group list-group-horizontal">
+                <button class="text-nowrap wd-linkset wd-bg-color">For you</button>
+                <button class="text-nowrap wd-linkset wd-bg-color">Trending</button>
+                <button class="text-nowrap  wd-linkset wd-bg-color">News</button>
+                <button class="text-nowrap wd-linkset wd-bg-color">Sports</button>
+                <button class="text-nowrap wd-linkset wd-bg-color">Entertainment</button>
+            </div>
         </div>
-        <div class="wd-suggested-post">
-            <img class="wd-float-right-img" src="assets/css.png">
-            <div class="wd-topic">CS 4550</div>
-            <div class="wd-timestamp">- 2/10</div>
-            <div class="wd-content">CS 4550 takes on CSS</div>
+
+        <div class="col-2 wd-lights-out-text ms-1"> <!-- right most w/ suggested "Who to follow"  -->
+            <label>Who to follow</label>
+            <div class="list-group">
+
+            </div>
         </div>
     </div>
 </div>
