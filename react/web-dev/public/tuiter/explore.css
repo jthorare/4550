@@ -1,6 +1,9 @@
 .wd-bg-color {
     background: rgb(20, 23, 26);
 }
+.nudge-down {
+    padding-top: 10px;
+}
 
 .wd-blue {
     color: rgb(29, 161, 242);
