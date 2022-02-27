@@ -1,0 +1,15 @@
+const WhoToFollowListItem = (who) => { // who is an object of form { avatarIcon: ..., userName: ..., handle: ... }
+    return (`
+                <div class="list-group-item follow position-relative">
+                    <img className="float-start rounded-circle" src="assets/${who.avatarIcon}">
+                        <div className="col-5">
+                        
+                            <div>${who.userName}</div>
+                            <div>@${who.handle}</div>
+                        </div>
+                    <a class="btn btn-primary btn-block rounded-pill ">Follow</a>
+                </div>
+    `);
+}
+
+export default WhoToFollowListItem;
