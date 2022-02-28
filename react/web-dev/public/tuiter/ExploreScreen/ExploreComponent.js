@@ -11,13 +11,13 @@ const ExploreComponent = () => {
                        id="search"
                        placeholder="Search Tuiter"
                        type="text">
-                <a href="explore-settings.html" class="position-absolute top-0 end-0 ">
+                <a href="explore-settings.html" class="position-absolute end-0" id="cog" >
                     <i class="fa-solid fa-gear wd-blue"></i>
                 </a>
             </div>
 
             <!-- tabs with highlight on active and focus -->
-            <div class=" pt-1 pb-1 ps-0 pe-0 list-group list-group-horizontal justify-content-center d-flex align-items-stretch"> <!-- -->
+            <div class=" pt-1 pb-1 ps-0 pe-0 list-group list-group-horizontal "> <!-- -->
                 <button class="text-nowrap wd-linkset list-group-item" href="for-you.html">For you</button>
                 <button class="text-nowrap wd-linkset list-group-item" href="trending.html">Trending</button>
                 <button class="text-nowrap  wd-linkset list-group-item" href="news.html">News</button>

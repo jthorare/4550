@@ -16,6 +16,10 @@
     width: 90%;
 }
 
+#cog {
+    top: 5px;
+}
+
 #MAG-GLASS {
     left: 10px;
     top: 7px;
