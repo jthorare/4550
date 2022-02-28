@@ -2,8 +2,7 @@ const WhoToFollowListItem = (who) => { // who is an object of form { avatarIcon:
     return (`
                 <div class="list-group-item follow position-relative">
                     <img className="float-start rounded-circle" src="assets/${who.avatarIcon}">
-                        <div className="col-5">
-                        
+                        <div className="">
                             <div>${who.userName}</div>
                             <div>@${who.handle}</div>
                         </div>

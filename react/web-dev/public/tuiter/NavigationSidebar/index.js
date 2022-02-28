@@ -1,6 +1,6 @@
 const NavigationSidebar = () => {
     return (`
-        <div class="wd-lights-out-text d-inline-block list-group">
+        <div class="wd-lights-out-text d-inline-block list-group nav-bar">
                 <a class="list-group-item" href="/">
                     <i class="fab fa-twitter"></i>
                 </a>
