@@ -1,0 +1,136 @@
+.wd-bg-color {
+    background: rgb(20, 23, 26);
+}
+.nudge-down {
+    padding-top: 10px;
+}
+
+.wd-blue {
+    color: rgb(29, 161, 242);
+}
+
+.wd-lights-out-text {
+    color: rgb(245, 248, 250);
+}
+
+.list-group-item {
+    background: rgb(20, 23, 26);
+    border:none;
+    color: rgb(245, 248, 250);
+}
+
+.list-group-item:active, .nav-bar:hover, .nav-bar:focus, .nav-bar:active, nav-bar:active, #tuit{
+    background: rgb(101, 119, 134);
+    color: rgb(245, 248, 250);
+    border-radius: 20px;
+}
+
+#search {
+    padding-left: 32px;
+    color: white;
+    background-color: rgb(47, 51, 54);
+    width: 90%;
+}
+
+#MAG-GLASS {
+    left: 10px;
+    top: 7px;
+}
+
+.wd-rounded-corners-all-around {
+    border-radius: 50px;
+}
+
+.wd-linkset {
+    font-size: 15px;
+    padding: 16px 0px;
+    margin: 0px 16px;
+    color: rgb(110, 118, 125);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.wd-linkset:hover {
+    color: rgb(29, 161, 242);
+    border-bottom: 2px solid rgb(29, 161, 242);
+}
+
+.wd-linkset:focus {
+    color: rgb(245, 248, 250);
+    border-bottom: 2px solid rgb(29, 161, 242);
+}
+
+.follow button {
+    background: rgb(101, 119, 134);
+    color: rgb(245, 248, 250);
+}
+
+.follow img {
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    margin: 3px 16px 3px 0px;
+    clear: both;
+    width: 60px;
+    height: 60px;
+}
+
+.wd-suggested-section {
+    border-top: 1px solid rgb(47,51,54);
+}
+.wd-suggested-post {
+    border-bottom: 1px solid rgb(47,51,54);
+    padding-left: 11px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    overflow: auto;
+    vertical-align: middle;
+}
+
+.wd-topic {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-suggested-post > .wd-suggested-filler {
+    font-size: 13px;
+    color: rgb(110,118,125);
+}
+
+.wd-suggested-post .wd-title{
+    font-size: 13px;
+    color: white;
+}
+
+.wd-suggested-post > .wd-author {
+    font-size: 13px;
+    color: white;
+}
+
+.wd-author, .wd-topic {
+    float: left;
+    margin-right: 10px;
+}
+
+.wd-suggested-post .wd-content {
+    font-size: 15px;
+    color: white;
+}
+
+.wd-timestamp {
+    font-size: 13px;
+    color: rgb(110,118,125);
+}
+
+.wd-float-right-img {
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    margin: 3px 16px 3px 0px;
+    clear:both;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
