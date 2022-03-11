@@ -9,27 +9,15 @@
     color: rgb(29, 161, 242);
 }
 
-.wd-lights-out-text {
-    color: rgb(245, 248, 250);
-}
-
-.list-group-item {
-    background: rgb(20, 23, 26);
-    border:none;
-    color: rgb(245, 248, 250);
-}
-
-.list-group-item:active, .nav-bar:hover, .nav-bar:focus, .nav-bar:active, nav-bar:active, #tuit{
-    background: rgb(101, 119, 134);
-    color: rgb(245, 248, 250);
-    border-radius: 20px;
-}
-
 #search {
     padding-left: 32px;
     color: white;
     background-color: rgb(47, 51, 54);
     width: 90%;
+}
+
+#cog {
+    top: 5px;
 }
 
 #MAG-GLASS {
@@ -42,14 +30,27 @@
 }
 
 .wd-linkset {
+    border-radius: 0px !important;
+}
+
+.list-group {
+    border-radius: 16px;
+}
+
+.wd-linkset {
     font-size: 15px;
-    padding: 16px 0px;
-    margin: 0px 16px;
     color: rgb(110, 118, 125);
+    display: block !important;
+    width: 100%;
+    background-color: inherit;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: none;
+    border-bottom: 2px solid transparent;
+}
+
+.follow-list {
+    border-radius: 16px;
 }
 
 .wd-linkset:hover {
@@ -62,27 +63,32 @@
     border-bottom: 2px solid rgb(29, 161, 242);
 }
 
-.follow button {
-    background: rgb(101, 119, 134);
-    color: rgb(245, 248, 250);
-}
-
 .follow img {
     display: inline-block;
     vertical-align: middle;
     float: left;
     margin: 3px 16px 3px 0px;
     clear: both;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
 }
 
-wd-suggested-section {
-    border-top: 1px solid rgb(47,51,54);
+.follow > a {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    vertical-align: center;
 }
+
+.wd-suggested-section {
+    border-top: 1px solid rgb(47, 51, 54);
+    color: rgb(245, 248, 250);
+    border-radius: 0px;
+}
+
 .wd-suggested-post {
-    border-bottom: 1px solid rgb(47,51,54);
-    padding-left: 11px;
+    border-bottom: 1px solid rgb(47, 51, 54);
     padding-top: 2px;
     padding-bottom: 2px;
     overflow: auto;
@@ -94,17 +100,16 @@ wd-suggested-section {
     color: rgb(110, 118, 125);
 }
 
-.wd-suggested-post > .wd-suggested-filler {
+.wd-suggested-post  .wd-suggested-filler {
     font-size: 13px;
-    color: rgb(110,118,125);
+    color: rgb(110, 118, 125);
 }
 
-.wd-suggested-post .wd-title{
+.wd-suggested-post .wd-title {
     font-size: 13px;
-    color: white;
 }
 
-.wd-suggested-post > .wd-author {
+.wd-suggested-post  .wd-author {
     font-size: 13px;
     color: white;
 }
@@ -121,7 +126,7 @@ wd-suggested-section {
 
 .wd-timestamp {
     font-size: 13px;
-    color: rgb(110,118,125);
+    color: rgb(110, 118, 125);
 }
 
 .wd-float-right-img {
@@ -129,7 +134,7 @@ wd-suggested-section {
     vertical-align: middle;
     float: right;
     margin: 3px 16px 3px 0px;
-    clear:both;
+    clear: both;
     width: 100px;
     height: 100px;
     border-radius: 20px;
