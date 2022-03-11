@@ -1,5 +1,5 @@
 import PostSummaryItem from "./PostSummaryItem.js";
-import posts from "./posts.js";
+import posts from "./posts.json";
 const PostSummaryList = ({ posts }) => {
   return (
     <div class="w-100 wd-suggested-section list-group" id="SUGGESTED">

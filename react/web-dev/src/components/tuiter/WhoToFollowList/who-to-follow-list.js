@@ -1,12 +1,12 @@
 import WhoToFollowListItem from "./who-to-follow-list-item.js";
-import who from "./who.js";
+import who from "./who.json";
 
-const WhoToFollowList = ({ who }) => {
+const WhoToFollowList = () => {
   return (
     <div class="list-group follow-list">
       {who
         .map((followListItem) => {
-          return <WhoToFollowListItem who={who} />;
+          return <WhoToFollowListItem who={followListItem} />;
         })
         .join("")}
     </div>
