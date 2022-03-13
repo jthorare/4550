@@ -9,7 +9,7 @@
   color: rgb(29, 161, 242);
 }
 
-.list-group-item {
+a.list-group-item {
   display: flex;
 }
 
