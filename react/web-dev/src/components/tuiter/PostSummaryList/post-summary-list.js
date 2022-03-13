@@ -1,9 +1,11 @@
-import PostSummaryItem from "./PostSummaryItem.js";
+import PostSummaryItem from "./post-summary-item";
 import posts from "./posts.json";
-const PostSummaryList = ({ posts }) => {
+const PostSummaryList = () => {
   return (
     <div class="w-100 wd-suggested-section list-group" id="SUGGESTED">
-      {posts.map((post) => <PostSummaryItem post={post} />).join("")}
+      {posts.map((post) => (
+        <PostSummaryItem post={post} />
+      ))}
     </div>
   );
 };

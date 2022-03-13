@@ -1,6 +1,6 @@
 const WhoToFollowListItem = ({
   who = {
-    avatarIcon: "../../assets/nasa.png",
+    avatarIcon: "assets/nasa.png",
     userName: "NASA",
     handle: "NASA",
   },
@@ -8,10 +8,7 @@ const WhoToFollowListItem = ({
   return (
     <>
       <div class="list-group-item follow position-relative">
-        <img
-          className="float-start rounded-circle"
-          src={`assets/${who.avatarIcon}`}
-        />
+        <img className="float-start rounded-circle" src={who.avatarIcon} />
         <div className="">
           <div>{who.userName}</div>
           <div>@{who.handle}</div>
