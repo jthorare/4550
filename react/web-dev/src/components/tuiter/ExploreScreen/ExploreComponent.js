@@ -54,7 +54,7 @@ const ExploreComponent = () => {
       </div>
       <div class="w-100 wd-suggested-section" id="SUGGESTED">
         <div class="w-100 wd-suggested-post">
-          <img class="w-100" src="assets/starship.png" />
+          <img class="w-100" src="/tuiter/assets/starship.png" />
         </div>
         <PostSummaryList />
       </div>
