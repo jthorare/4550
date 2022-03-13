@@ -1,4 +1,4 @@
-const NavigationSidebar = ({ active = "explore" }) => {
+const NavigationSidebar = () => {
   return (
     <>
       <div className="wd-lights-out-text d-inline-block list-group">
@@ -41,7 +41,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
         </a>
         <a
           href="./edit-profile.html"
-          className="-tabs list-group-item list-group-item-action "
+          className=" list-group-item list-group-item-action "
         >
           <i className="fa-solid fa-ellipsis"></i>
           <label className="d-none d-lg-inline">More</label>

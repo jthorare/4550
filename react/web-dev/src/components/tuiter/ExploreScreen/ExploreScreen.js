@@ -8,7 +8,7 @@ const ExploreScreen = () => {
       <div class="container pb-1" id="wd-explore">
         <div class="row mt-2">
           <div class="col-2 col-md-2 col-lg-2 col-xl-2">
-            <NavigationSidebar active="home" />
+            <NavigationSidebar />
           </div>
           <div class="col-9 col-lg-6 d-inline-block">
             <ExploreComponent />

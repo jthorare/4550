@@ -1,141 +1,152 @@
 .wd-bg-color {
-    background: rgb(20, 23, 26);
+  background: rgb(20, 23, 26);
 }
 .nudge-down {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 .wd-blue {
-    color: rgb(29, 161, 242);
+  color: rgb(29, 161, 242);
+}
+
+.list-group-item {
+  display: flex;
+}
+
+a > i {
+  width: 14px;
+  margin-right: 8px;
+  margin-top: 4px;
 }
 
 #search {
-    padding-left: 32px;
-    color: white;
-    background-color: rgb(47, 51, 54);
-    width: 90%;
+  padding-left: 32px;
+  color: white;
+  background-color: rgb(47, 51, 54);
+  width: 90%;
 }
 
 #cog {
-    top: 5px;
+  top: 5px;
 }
 
 #MAG-GLASS {
-    left: 10px;
-    top: 7px;
+  left: 10px;
+  top: 7px;
 }
 
 .wd-rounded-corners-all-around {
-    border-radius: 50px;
+  border-radius: 50px;
 }
 
 .wd-linkset {
-    border-radius: 0px !important;
+  border-radius: 0px !important;
 }
 
 .list-group {
-    border-radius: 16px;
+  border-radius: 16px;
 }
 
 .wd-linkset {
-    font-size: 15px;
-    color: rgb(110, 118, 125);
-    display: block !important;
-    width: 100%;
-    background-color: inherit;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px solid transparent;
+  font-size: 15px;
+  color: rgb(110, 118, 125);
+  display: block !important;
+  width: 100%;
+  background-color: inherit;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid transparent;
 }
 
 .follow-list {
-    border-radius: 16px;
+  border-radius: 16px;
 }
 
 .wd-linkset:hover {
-    color: rgb(29, 161, 242);
-    border-bottom: 2px solid rgb(29, 161, 242);
+  color: rgb(29, 161, 242);
+  border-bottom: 2px solid rgb(29, 161, 242);
 }
 
 .wd-linkset:focus {
-    color: rgb(245, 248, 250);
-    border-bottom: 2px solid rgb(29, 161, 242);
+  color: rgb(245, 248, 250);
+  border-bottom: 2px solid rgb(29, 161, 242);
 }
 
 .follow img {
-    display: inline-block;
-    vertical-align: middle;
-    float: left;
-    margin: 3px 16px 3px 0px;
-    clear: both;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+  margin: 3px 16px 3px 0px;
+  clear: both;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
 }
 
 .follow > a {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    vertical-align: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  vertical-align: center;
 }
 
 .wd-suggested-section {
-    border-top: 1px solid rgb(47, 51, 54);
-    color: rgb(245, 248, 250);
-    border-radius: 0px;
+  border-top: 1px solid rgb(47, 51, 54);
+  color: rgb(245, 248, 250);
+  border-radius: 0px;
 }
 
 .wd-suggested-post {
-    border-bottom: 1px solid rgb(47, 51, 54);
-    padding-top: 2px;
-    padding-bottom: 2px;
-    overflow: auto;
-    vertical-align: middle;
+  border-bottom: 1px solid rgb(47, 51, 54);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  overflow: auto;
+  vertical-align: middle;
 }
 
 .wd-topic {
-    font-size: 13px;
-    color: rgb(110, 118, 125);
+  font-size: 13px;
+  color: rgb(110, 118, 125);
 }
 
-.wd-suggested-post  .wd-suggested-filler {
-    font-size: 13px;
-    color: rgb(110, 118, 125);
+.wd-suggested-post .wd-suggested-filler {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
 }
 
 .wd-suggested-post .wd-title {
-    font-size: 13px;
+  font-size: 13px;
 }
 
-.wd-suggested-post  .wd-author {
-    font-size: 13px;
-    color: white;
+.wd-suggested-post .wd-author {
+  font-size: 13px;
+  color: white;
 }
 
-.wd-author, .wd-topic {
-    float: left;
-    margin-right: 10px;
+.wd-author,
+.wd-topic {
+  float: left;
+  margin-right: 10px;
 }
 
 .wd-suggested-post .wd-content {
-    font-size: 15px;
-    color: white;
+  font-size: 15px;
+  color: white;
 }
 
 .wd-timestamp {
-    font-size: 13px;
-    color: rgb(110, 118, 125);
+  font-size: 13px;
+  color: rgb(110, 118, 125);
 }
 
 .wd-float-right-img {
-    display: inline-block;
-    vertical-align: middle;
-    float: right;
-    margin: 3px 16px 3px 0px;
-    clear: both;
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+  margin: 3px 16px 3px 0px;
+  clear: both;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
 }

@@ -10,7 +10,9 @@ const PostSummaryItem = ({
 }) => {
   return (
     <div class="list-group-item wd-suggested-post">
-      {post.image && <div className="wd-float-right-img" src={post.image} />}
+      {post.image && (
+        <img className="wd-float-right-img" alt="image" src={post.image} />
+      )}
       {post.topic.length > 0 && (
         <div class="wd-suggested-filler">{post.topic}</div>
       )}

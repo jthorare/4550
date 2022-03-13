@@ -8,7 +8,11 @@ const WhoToFollowListItem = ({
   return (
     <>
       <div class="list-group-item follow position-relative">
-        <img className="float-start rounded-circle" src={who.avatarIcon} />
+        <img
+          className="float-start rounded-circle"
+          alt="image"
+          src={who.avatarIcon}
+        />
         <div className="">
           <div>{who.userName}</div>
           <div>@{who.handle}</div>
