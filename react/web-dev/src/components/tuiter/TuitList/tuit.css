@@ -1,0 +1,59 @@
+.wd-suggested-section {
+  border-top: 1px solid rgb(47, 51, 54);
+  color: rgb(245, 248, 250);
+  border-radius: 0px;
+}
+
+.wd-suggested-post {
+  border-bottom: 1px solid rgb(47, 51, 54);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  overflow: auto;
+  vertical-align: middle;
+}
+
+.wd-topic {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+}
+
+.wd-suggested-post .wd-suggested-filler {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+}
+
+.wd-suggested-post .wd-title {
+  font-size: 13px;
+}
+
+.wd-suggested-post .wd-author {
+  font-size: 13px;
+  color: white;
+}
+
+.wd-author,
+.wd-topic {
+  float: left;
+  margin-right: 10px;
+}
+
+.wd-suggested-post .wd-content {
+  font-size: 15px;
+  color: white;
+}
+
+.wd-timestamp {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+}
+
+.wd-float-right-img {
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+  margin: 3px 16px 3px 0px;
+  clear: both;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+}
