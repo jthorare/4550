@@ -1,4 +1,6 @@
 import "./tuit.css"
+import { useDispatch } from "react-redux";
+import TuitStats from "./TuitStats";
 const TuitListItem = (
             {tuit = {
             "_id": "123",
@@ -25,41 +27,30 @@ const TuitListItem = (
             }
         }
 ) => {
+    const dispatch = useDispatch();
+    const deleteTuit = (tuit) => {
+        dispatch({type: "delete-tuit", tuit})
+    };
     return(
         <>
 
-        <div className="wd-bm-bookmark list-group-item">
-            <img className="wd-bm-avatar" src={tuit["avatar-image"]}/>
-            <div className="wd-bm-user-info">
-                <p className="wd-bm-username">{tuit.postedBy.username}</p>
-                <p className="wd-bm-handle">@{tuit.handle}</p>
-                <p className="wd-bm-timestamp">- {tuit.time}</p>
+        <div className="wd-home-bookmark list-group-item">
+            <i onClick={() => deleteTuit(tuit)} className="fas fa-remove fa-2x fa-pull-right"/>
+            <img className="wd-home-avatar" src={tuit["avatar-image"]}/>
+            <div className="wd-home-user-info">
+                <p className="wd-home-username">{tuit.postedBy.username}</p>
+                <p className="wd-home-handle">@{tuit.handle}</p>
+                <p className="wd-home-timestamp">- {tuit.time}</p>
             </div>
-            <div className="wd-bm-content">
+            <div className="wd-home-content">
                 <p>{tuit.tuit}</p>
             </div>
-            <div className="wd-bm-snapshot">
-                {tuit.attachments && tuit.attachments.image && <img className="wd-bm-image" src={tuit.attachments.image}/>}
-                {tuit.attachments && tuit.attachments.video && <video className="wd-bm-image" src={tuit.attachments.video}/>}
-                {tuit.title && <div className="wd-bm-snapshot-title">{tuit.title}</div> }
+            <div className="wd-home-snapshot">
+                {tuit.attachments && tuit.attachments.image && <img className="wd-home-image" src={tuit.attachments.image}/>}
+                {tuit.attachments && tuit.attachments.video && <video className="wd-home-image" src={tuit.attachments.video}/>}
+                {tuit.title && <div className="wd-home-snapshot-title">{tuit.title}</div> }
             </div>
-            <div className="wd-icons">
-                <a className="wd-share-thread" href="#">
-                    <i className="fa-regular fa-comment wd-share-thread-icon"></i>
-                    <label>{tuit.stats.comments}</label>
-                </a>
-                <a className="wd-retweet" href="#">
-                    <i className="fa-solid fa-retweet wd-retweet-icon"></i>
-                    <label>{tuit.stats.retuits}</label>
-                </a>
-                <a className="wd-like" href="#">
-                    <i className="fa-regular fa-heart wd-like-icon"></i>
-                    <label>{tuit.stats.likes}</label>
-                </a>
-                <a className="wd-share-thread" href="#">
-                    <i className="fa-solid fa-arrow-up-from-bracket wd-share-thread-icon"></i>
-                </a>
-            </div>
+           <TuitStats tuit={tuit}/> 
         </div>
         </>
     )
