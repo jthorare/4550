@@ -13,6 +13,7 @@ function App() {
       <div className="container">
       <Routes>
          <Route path="/">
+           <Route index element={<Labs/>}/>
            <Route path="labs"
                   element={<Labs/>}/>
            <Route path="hello"
