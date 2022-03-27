@@ -1,3 +1,4 @@
+import "./tuit.css"
 const TuitListItem = (
             {tuit = {
             "_id": "123",
@@ -14,8 +15,8 @@ const TuitListItem = (
             "attachments": {
                 "video": "unKvMC3Y1kI"
             },
-            "logo-image": "../../../images/react-blue.png",
-            "avatar-image": "../../../images/react-blue.png",
+            "logo-image": "/tuiter/react-blue.png",
+            "avatar-image": "/tuiter/react-blue.png",
             "stats": {
                 "comments": 123,
                 "retuits": 234,
@@ -26,21 +27,40 @@ const TuitListItem = (
 ) => {
     return(
         <>
-            <div className="list-group-item wd-home-tuit">
-            {tuit["avatar-image"] && (
-                <image classNameName="wd-avatar-img" alt="image" src={tuit["avatar-image"]} />
-            )}
-            <div>
-                {tuit.postedBy.username && <label className="wd-title">{tuit.postedBy.username}</label>}
-                {tuit.handle && <label classNameName="wd-topic">@{tuit.handle}</label>}
-                {tuit.time && <label className="wd-timestamp">- {tuit.time}</label>}
-            </div>
-            {tuit.title && <div className="wd-content">{tuit.tuit}</div>}
-            </div>
-            <div className="wd-tuit-img"></div>
-            <div className="wd-tuit-stats">
 
+        <div className="wd-bm-bookmark list-group-item">
+            <img className="wd-bm-avatar" src={tuit["avatar-image"]}/>
+            <div className="wd-bm-user-info">
+                <p className="wd-bm-username">{tuit.postedBy.username}</p>
+                <p className="wd-bm-handle">@{tuit.handle}</p>
+                <p className="wd-bm-timestamp">- {tuit.time}</p>
             </div>
+            <div className="wd-bm-content">
+                <p>{tuit.tuit}</p>
+            </div>
+            <div className="wd-bm-snapshot">
+                {tuit.attachments && tuit.attachments.image && <img className="wd-bm-image" src={tuit.attachments.image}/>}
+                {tuit.attachments && tuit.attachments.video && <video className="wd-bm-image" src={tuit.attachments.video}/>}
+                {tuit.title && <div className="wd-bm-snapshot-title">{tuit.title}</div> }
+            </div>
+            <div className="wd-icons">
+                <a className="wd-share-thread" href="#">
+                    <i className="fa-regular fa-comment wd-share-thread-icon"></i>
+                    <label>{tuit.stats.comments}</label>
+                </a>
+                <a className="wd-retweet" href="#">
+                    <i className="fa-solid fa-retweet wd-retweet-icon"></i>
+                    <label>{tuit.stats.retuits}</label>
+                </a>
+                <a className="wd-like" href="#">
+                    <i className="fa-regular fa-heart wd-like-icon"></i>
+                    <label>{tuit.stats.likes}</label>
+                </a>
+                <a className="wd-share-thread" href="#">
+                    <i className="fa-solid fa-arrow-up-from-bracket wd-share-thread-icon"></i>
+                </a>
+            </div>
+        </div>
         </>
     )
 }
