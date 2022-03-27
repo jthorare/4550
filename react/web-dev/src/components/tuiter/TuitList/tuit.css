@@ -1,10 +1,10 @@
-.wd-suggested-section {
+.wd-home-section {
   border-top: 1px solid rgb(47, 51, 54);
   color: rgb(245, 248, 250);
   border-radius: 0px;
 }
 
-.wd-suggested-post {
+.wd-home-post {
   border-bottom: 1px solid rgb(47, 51, 54);
   padding-top: 2px;
   padding-bottom: 2px;
@@ -17,16 +17,16 @@
   color: rgb(110, 118, 125);
 }
 
-.wd-suggested-post .wd-suggested-filler {
+.wd-home-post .wd-suggested-filler {
   font-size: 13px;
   color: rgb(110, 118, 125);
 }
 
-.wd-suggested-post .wd-title {
+.wd-home-post .wd-title {
   font-size: 13px;
 }
 
-.wd-suggested-post .wd-author {
+.wd-home-post .wd-author {
   font-size: 13px;
   color: white;
 }
@@ -37,7 +37,7 @@
   margin-right: 10px;
 }
 
-.wd-suggested-post .wd-content {
+.wd-home-post .wd-content {
   font-size: 15px;
   color: white;
 }
@@ -47,10 +47,9 @@
   color: rgb(110, 118, 125);
 }
 
-.wd-float-right-img {
-  display: inline-block;
+.wd-avatar-img {
   vertical-align: middle;
-  float: right;
+  float: left;
   margin: 3px 16px 3px 0px;
   clear: both;
   width: 100px;

@@ -26,9 +26,9 @@ const TuitListItem = (
 ) => {
     return(
         <>
-            <div className="list-group-item wd-suggested-tuit">
-            {tuit.image && (
-                <img classNameName="wd-float-right-img" alt="image" src={tuit.image} />
+            <div className="list-group-item wd-home-tuit">
+            {tuit["avatar-image"] && (
+                <image classNameName="wd-avatar-img" alt="image" src={tuit["avatar-image"]} />
             )}
             <div>
                 {tuit.postedBy.username && <label className="wd-title">{tuit.postedBy.username}</label>}
