@@ -1,0 +1,152 @@
+.wd-home-bg-color-black {
+    background: black;
+}
+
+* {
+    font-size: 100%;
+    font-family: "Segoe UI";
+}
+
+.wd-home-header, .wd-home-bookmark {
+    border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+.wd-home-title {
+    margin-left: 16px;
+    margin-right: 12px;
+    margin-bottom: 0px;
+}
+
+.wd-home-content > p {
+    display: inline-block;
+    border-radius: 12px;
+    margin-left: 80px;
+    margin-top: 0px;
+}
+
+.wd-home-title {
+    font-size: 20px;
+    color: white;
+}
+
+.wd-home-user-info {
+    display: inline-block;
+    margin-left: 12px;
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-home-username {
+    color: white;
+    float: left;
+}
+
+.wd-home-content {
+    position: relative;
+    top: -30px;
+    color: white;
+    font-size: 15px;
+    max-width: 506px;
+    margin-right: 16px;
+    margin-bottom: 12px;
+}
+
+.wd-home-handle, .wd-home-timestamp {
+    float: left;
+    margin-left: 3px;
+}
+
+
+.wd-home-header > .wd-home-header-handle {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+}
+
+.wd-home-bookmark {
+    clear: both;
+}
+
+
+.wd-home-bookmark > .wd-home-avatar {
+    margin: 12px 0px 0px 16px;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+}
+
+.wd-home-snapshot {
+    position: relative;
+    margin-left: 80px;
+    top: -30px;
+    border: 1px solid rgb(47, 51, 54);
+    border-radius: 10px;
+    max-width: 504px;
+}
+
+.wd-home-snapshot > .wd-home-image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 264px;
+    width: 504px;
+}
+
+.wd-home-snapshot-title, .wd-home-snapshot-text {
+    font-size: 15px;
+    padding: 0px 12px 12px 12px;
+}
+
+.wd-home-snapshot > .wd-home-snapshot-title {
+    color: white;
+    font-weight: bold;
+}
+
+.wd-home-snapshot > .wd-home-snapshot-text {
+    color: rgb(110, 118, 125);
+}
+
+.wd-icons {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.wd-icons > a {
+    text-decoration: none;
+}
+
+.wd-icons > a > label{
+    padding-left: 12px;
+}
+
+
+.wd-share-thread, .wd-retweet, .wd-like {
+    color: rgb(110, 118, 125);
+    border-radius: 10px;
+}
+
+.wd-share-thread:hover {
+    opacity: 1;
+    background: rgba(29, 161, 242, 0.5);
+    color: rgb(28, 161, 242);
+}
+
+.wd-share-thread:focus > .wd-share-thread-icon {
+    color: rgb(28, 161, 242);
+}
+
+.wd-retweet:hover {
+    opacity: 1;
+    background: rgba(25, 207, 134, 0.5);
+    color: rgb(25, 207, 134);
+}
+
+.wd-retweet:focus > .wd-retweet-icon {
+    color: rgb(25, 207, 134);
+}
+
+.wd-like:hover {
+    opacity: 1;
+    background: rgba(224, 96, 118, 0.5);
+    color: rgb(224, 96, 118);
+}

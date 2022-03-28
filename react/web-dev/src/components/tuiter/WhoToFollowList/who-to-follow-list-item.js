@@ -7,7 +7,7 @@ const WhoToFollowListItem = ({
 }) => {
   return (
     <>
-      <div class="list-group-item follow position-relative">
+      <div className="list-group-item follow position-relative">
         <img
           className="float-start rounded-circle"
           alt="image"
@@ -17,7 +17,7 @@ const WhoToFollowListItem = ({
           <div>{who.userName}</div>
           <div>@{who.handle}</div>
         </div>
-        <a class="btn btn-primary btn-block rounded-pill ">Follow</a>
+        <a className="btn btn-primary btn-block rounded-pill ">Follow</a>
       </div>
     </>
   );
