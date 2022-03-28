@@ -46,8 +46,8 @@ const TuitListItem = (
                 </div>
                 <div className="wd-home-snapshot">
                     {tuit.attachments && tuit.attachments.image && <img className="wd-home-image" src={tuit.attachments.image}/>}
-                    {tuit.attachments && tuit.attachments.video && <video className="wd-home-image" src={tuit.attachments.video}/>}
-                    {tuit.title && <div className="wd-home-snapshot-title">{tuit.title}</div> }
+                    {tuit.attachments && tuit.attachments.video && <iframe className="wd-home-image" src={"https://www.youtube.com/embed/" + tuit.attachments.video}
+                         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>}
                 </div>
             <TuitStats tuit={tuit}/> 
             </div>

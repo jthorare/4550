@@ -78,16 +78,14 @@
     position: relative;
     margin-left: 80px;
     top: -30px;
-    border: 1px solid rgb(47, 51, 54);
     border-radius: 10px;
     max-width: 504px;
 }
 
 .wd-home-snapshot > .wd-home-image {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    height: 264px;
-    width: 504px;
+    border-radius: 10px;
+    height: 204px;
+    width: 100%;
 }
 
 .wd-home-snapshot-title, .wd-home-snapshot-text {
