@@ -21,6 +21,7 @@ function App() {
            <Route path="tuiter"
                   element={<Tuiter/>}>
              <Route index
+                    path="home"
                     element={<HomeScreen/>}/>
              <Route path="explore"
                     element={<ExploreComponent/>}/>

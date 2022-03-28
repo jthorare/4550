@@ -6,7 +6,7 @@ const HelloWord = () => {
     <>
       <h1>Hello World!</h1>
       <Link to="/">Labs</Link>
-      <Link to="/tuiter">Tuiter</Link>
+      <Link to="/tuiter/home">Tuiter</Link>
     </>
   );
 };

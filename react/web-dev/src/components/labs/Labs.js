@@ -10,7 +10,7 @@ const Labs = () => {
     <>
       <h1>Labs</h1>
       <Link to="/hello">Hello</Link>
-      <Link to="/tuiter">Tuiter</Link>
+      <Link to="/tuiter/home">Tuiter</Link>
       <ConditionalOutput />
       <Styles />
       <Classes />
