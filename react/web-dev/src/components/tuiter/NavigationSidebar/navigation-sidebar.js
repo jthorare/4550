@@ -12,7 +12,7 @@ const NavigationSidebar = () => {
           <i className="fa fa-home"></i>
           <label className="d-none d-lg-inline">Home</label>
         </a>
-        <a href="/tuiter/explore/" className=" list-group-item list-group-item-action ">
+        <a href="/explore/" className=" list-group-item list-group-item-action ">
           <i className="fa-solid fa-hashtag"></i>
           <label className="d-none d-lg-inline">Explore</label>
         </a>
