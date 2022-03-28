@@ -17,8 +17,8 @@ const TuitListItem = (
             "attachments": {
                 "video": "unKvMC3Y1kI"
             },
-            "logo-image": "/tuiter/react-blue.png",
-            "avatar-image": "/tuiter/react-blue.png",
+            "logo-image": "/tuiter/react.png",
+            "avatar-image": "/tuiter/react.png",
             "stats": {
                 "comments": 123,
                 "retuits": 234,

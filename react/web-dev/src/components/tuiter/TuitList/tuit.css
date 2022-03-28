@@ -122,6 +122,7 @@
 
 .wd-share-thread, .wd-retweet, .wd-like {
     color: rgb(110, 118, 125);
+    border-radius: 10px;
 }
 
 .wd-share-thread:hover {
@@ -147,9 +148,5 @@
 .wd-like:hover {
     opacity: 1;
     background: rgba(224, 96, 118, 0.5);
-    color: rgb(224, 96, 118);
-}
-
-.wd-like:focus > .wd-like-icon {
     color: rgb(224, 96, 118);
 }
