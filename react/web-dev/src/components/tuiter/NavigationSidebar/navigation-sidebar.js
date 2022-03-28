@@ -6,13 +6,13 @@ const NavigationSidebar = () => {
           <i className="fab fa-twitter"></i>
         </a>
         <a
-          href="/tuiter/"
+          href="/tuiter"
           className=" list-group-item list-group-item-action "
         >
           <i className="fa fa-home"></i>
           <label className="d-none d-lg-inline">Home</label>
         </a>
-        <a href="/explore/" className=" list-group-item list-group-item-action ">
+        <a href="/tuiter/explore" className=" list-group-item list-group-item-action ">
           <i className="fa-solid fa-hashtag"></i>
           <label className="d-none d-lg-inline">Explore</label>
         </a>
