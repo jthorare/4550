@@ -6,7 +6,7 @@ const NavigationSidebar = () => {
           <i className="fab fa-twitter"></i>
         </a>
         <a
-          href="/tuiter/"
+          href="/tuiter/home"
           className=" list-group-item list-group-item-action "
         >
           <i className="fa fa-home"></i>
