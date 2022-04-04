@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-
+import { updateTuit } from "../../../actions/tuits-actions.js";
 const TuitStats = ({tuit = {
             "_id": "123",
             "topic": "Web Development",
@@ -25,30 +25,50 @@ const TuitStats = ({tuit = {
             }
         }) => {
             const dispatch = useDispatch();
-            const likeTuit = () => {dispatch({type: 'like-tuit', tuit});};
-    return(
-        <div className="wd-icons">
-            <a className="wd-share-thread" href="#">
-                <i className="fa-regular fa-comment wd-share-thread-icon"></i>
-                <label>{tuit.stats.comments}</label>
-            </a>
-            <a className="wd-retweet" href="#">
-                <i className="fa-solid fa-retweet wd-retweet-icon"></i>
-                <label>{tuit.stats.retuits}</label>
-            </a>
-            <a className="wd-like" href="#" onClick={likeTuit}>
-                {tuit.liked &&
-                    <i className="fas fa-heart wd-like-icon" style={{color: "#e26076"}}></i>
+            if(tuit.stats) {
+                return(
+                    <div className="wd-icons">
+                        <a className="wd-share-thread" href="#">
+                            <i className="fa-regular fa-comment wd-share-thread-icon"></i>
+                            <label>{tuit.stats.comments}</label>
+                        </a>
+                        <a className="wd-retweet" href="#">
+                            <i className="fa-solid fa-retweet wd-retweet-icon"></i>
+                            <label>{tuit.stats.retuits}</label>
+                        </a>
+                        <a className="wd-like" href="#" onClick={() => {updateTuit(dispatch, {...tuit, likes: tuit.likes + 1})}}>
+                            {tuit.liked &&
+                                <i className="fas fa-heart wd-like-icon" style={{color: "#e26076"}}></i>
+                            }
+                            {!tuit.liked && 
+                                <i className="fa-regular fa-heart wd-like-icon"></i>
+                            }
+                            <label>{tuit.stats.likes}</label>
+                        </a>
+                        <a className="wd-share-thread" href="#">
+                            <i className="fa-solid fa-arrow-up-from-bracket wd-share-thread-icon"></i>
+                        </a>
+                    </div>);
+                        } 
+            else {
+                return(
+                    <div className="wd-icons">
+                        <a className="wd-share-thread" href="#">
+                            <i className="fa-regular fa-comment wd-share-thread-icon"></i>
+                        </a>
+                        <a className="wd-retweet" href="#">
+                            <i className="fa-solid fa-retweet wd-retweet-icon"></i>
+                        </a>
+                        <a className="wd-like" href="#" onClick={() => {updateTuit(dispatch, {...tuit, likes: tuit.likes + 1})}}>
+                            {!tuit.liked && 
+                                <i className="fa-regular fa-heart wd-like-icon"></i>
+                            }
+                        </a>
+                        <a className="wd-share-thread" href="#">
+                            <i className="fa-solid fa-arrow-up-from-bracket wd-share-thread-icon"></i>
+                        </a>
+                    </div>);
                 }
-                {!tuit.liked && 
-                    <i className="fa-regular fa-heart wd-like-icon"></i>
-                }
-                <label>{tuit.stats.likes}</label>
-            </a>
-            <a className="wd-share-thread" href="#">
-                <i className="fa-solid fa-arrow-up-from-bracket wd-share-thread-icon"></i>
-            </a>
-        </div>);
-}
+    }
 
 export default TuitStats;

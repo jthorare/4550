@@ -1,5 +1,6 @@
 import "./tuit.css"
 import { useDispatch } from "react-redux";
+import { deleteTuit } from "../../../actions/tuits-actions";
 import TuitStats from "./TuitStats";
 const TuitListItem = (
             {tuit = {
@@ -28,16 +29,14 @@ const TuitListItem = (
         }
 ) => {
     const dispatch = useDispatch();
-    const deleteTuit = (tuit) => {
-        dispatch({type: "delete-tuit", tuit})
-    };
+
     return(
         <>
             <div className="wd-home-bookmark list-group-item">
-                <i onClick={() => deleteTuit(tuit)} className="fas fa-remove fa-2x fa-pull-right"/>
-                <img className="wd-home-avatar" src={tuit["avatar-image"]}/>
+                <i onClick={() => deleteTuit(dispatch, tuit)} className="fas fa-remove fa-2x fa-pull-right"/>
+                {tuit["avatar-image"] && <img className="wd-home-avatar" src={tuit["avatar-image"]}/> }
                 <div className="wd-home-user-info">
-                    <p className="wd-home-username">{tuit.postedBy.username}</p>
+                    <p className="wd-home-username">{tuit.postedBy?.username}</p>
                     <p className="wd-home-handle">@{tuit.handle}</p>
                     <p className="wd-home-timestamp">- {tuit.time}</p>
                 </div>
