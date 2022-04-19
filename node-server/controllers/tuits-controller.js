@@ -1,4 +1,4 @@
-import {createTuitDao, findAllTuitsDao, deleteTuitDao, updateTuitDao} from "../model/tuits-dao.js";
+import {createTuitDao, updateTuitDao, deleteTuitDao, findAllTuitsDao} from "../model/tuits-dao.js";
 const createTuit = async (req, res) => {
     const newTuit = req.body;
     const insertedTuit = await createTuitDao(newTuit);
